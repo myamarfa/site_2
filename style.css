@@ -1,0 +1,235 @@
+footer {
+width: 100%;
+    background-color: rgb(32,36,57);
+    color: rgb(243,244,247);
+}
+
+@font-face {
+    font-family: 'Gardens CM';
+    src: local('Stolz'),
+         url('/font/20011.woff2') format('woff2'), 
+         url('/font/20011.woff') format('woff');
+  }
+
+.navbar {
+    background-color: rgb(13,127,140);
+}
+.navbar .active{
+    color:#202439;
+    background-color: rgb(211,79,18) !important;
+    width: max-content;
+}
+
+.navbar-nav {
+    text-align: left;
+  }
+  
+  .navbar-collapse .navbar-nav {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Gardens CM';
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    position: relative;
+    background-color: rgb(13,127,140);
+}
+
+
+
+nav {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: rgb(13,127,140);
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+}
+
+
+nav a:hover {
+    background-color: rgb(211,79,18);
+}
+
+
+.active_nav {
+    background-color: rgb(211,79,18);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+.container {
+    max-width: 100%;
+  }
+
+section {
+    width: 100%;
+}
+
+/* Общие стили для сайдбара */
+aside {
+    font-family: 'Gardens CM';
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+section {
+    padding: 2%;
+}
+
+#section1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+#section1 {
+  margin: 10% 2%;
+}
+
+.btn {
+    font-family: 'Gardens CM';
+    font-size: 25px;
+    width: 100%;
+}
+
+#about_tariffs {
+    background-color: rgb(237,105,42);
+    border-radius: 1rem;
+    border: none;
+    width: 100%;
+    margin-top: 1%;
+    color: rgb(32,36,57);
+}
+
+#about_tariffs:hover {
+    color: rgb(13,127,140);
+    background-color: rgb(32,36,57);
+}
+
+
+
+.card-img-top {
+    width: 100%; /* Заставляет изображение занимать всю ширину карточки */
+    height: auto; /* Сохраняет пропорции изображения */
+    object-fit: cover; /* Если изображения разных размеров, они будут обрезаться, сохраняя эстетичность */
+}
+
+.pluses {
+    text-align: left !important;
+}
+
+#price1 {
+    font-size: 23px;
+    color: rgb(13,127,140);
+    font-weight: bold;
+}
+
+#price2 {
+    font-size: 23px;
+    color: rgb(237,105,42);
+    font-weight: bold;
+}
+#price3 {
+    font-size: 23px;
+    color: rgb(32,36,57);
+    font-weight: bold;
+}
+
+#buy1 {
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(13,127,140);
+    color: rgb(32,36,57);
+}
+#buy1:hover {
+    background-color: rgb(32,36,57);
+    color: rgb(13,127,140);
+}
+
+#buy2 {
+
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(237,105,42);
+    color: rgb(32,36,57);
+    display: block;
+
+
+}
+#buy2:hover {
+    background-color: rgb(13,127,140);
+    color: rgb(237,105,42);
+}
+
+
+#buy3 {
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(32,36,57);
+    color: rgb(237,105,42);
+}
+#buy3:hover {
+    background-color: rgb(237,105,42);
+    color: rgb(32,36,57);
+}
+
+
+
+
+@media (min-width: 992px) {
+  }/* Общее стилизованное форматирование */
+  @media (max-width: 768px) {
+      header, main, footer {
+          padding: 0.5rem;
+      } 
+      aside {
+        display: none;
+    }
+
+    body {
+        margin-left: 0; /* Убираем отступ, когда сайдбар скрыт */
+    }
+    .navbar {
+        margin-left: 0;
+    }
+    .card-img-top {
+        max-height: 200px; /* Ограничиваем высоту для мобильных устройств */
+    }
+  }
+  
+  @media (max-width: 576px) {
+      section h1, section h3 {
+          font-size: 1.5rem;
+      }
+  
+      nav ul {
+          flex-direction: column; /* Вертикальное расположение меню */
+      }
+      .card-img-top {
+        max-height: 150px; /* Ещё больше уменьшаем для маленьких экранов */
+    }
+  }
